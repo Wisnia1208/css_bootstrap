@@ -7,14 +7,12 @@ const Css1 = () => {
 
   useEffect(() => {}, [showImage]);
 
-  const handleAnimationBooty = () => {
+  const handleAnimation2 = () => {
     setShowImage(true);
-    const audio = new Audio("/sound.mp3");
-    audio.play();
 
     setTimeout(() => {
       setShowImage(false);
-    }, 300);
+    }, 2000);
   };
 
   const handleAnimation = () => {
@@ -30,7 +28,7 @@ const Css1 = () => {
         Animate
       </button>
 
-      <button className="btn btn-primary m-3" onClick={handleAnimationBooty}>
+      <button className="btn btn-primary m-3" onClick={handleAnimation2}>
         Show Image
       </button>
       <div className="animate-image">
